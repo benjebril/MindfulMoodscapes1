@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Mindful Moodscapes </title>
+  <link rel="icon" href="image.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body">
+  <div>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#petition">Petition</a></li>
+        <li><button id="theme-button">Toggle Dark Mode</button></li>
+        <li><button id="reduce-motion">Reduce Motion</button></li>
+      </ul>
+    </div>
+  <div class="header-container">
+    <h1 id="home"> Mindful Moodscapes </h1>
+  </div>
+    <div style="display: flex; justify-content: space-between;">
+      <div style="flex: 1;">
+        <h2 style="text-align: left;">Stigma Surrounding Mental Health Issues</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bUlBZuQ2c0Q?si=-AU1L9XpUqRMYy4Q" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div style="text-align: right;">
+        <h2 style="text-align: right;">Reduction of Stigma Surrounding Mental Health</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zVkbBlA680A?si=Xqp1zmVPgfz6IivP" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="emotion-container active revealable">
+    <div class="emotion header-button" data-emotion="happy">
+      <h3>Happy</h3>
+      <div>
+        <img class="emotion-image" src="img1.jpeg" alt="Happy Image">
+      </div>
+      <button type="button" onclick="toggleQuote(this)">Happy</button>
+      <p id="happy-quote" style="display: none;">"Your happiness is a reflection of your thoughts."</p>
+    </div>
+
+    <div class="emotion header-button" data-emotion="sad" id="about">
+      <h3>Sad</h3>
+      <div>
+        <img class="emotion-image" src="img2.jpeg" alt="Sad Image">
+      </div>
+      <button type="button" onclick="toggleQuote(this)">Sad</button>
+      <p id="sad-quote" style="display: none;">"Every cloud has a silver lining. Remember that brighter days are ahead."</p>
+    </div>
+    <div class="emotion header-button" data-emotion="angry">
+      <h3>Angry</h3>
+      <div>
+        <img class="emotion-image" src="img1.jpeg" alt="Angry Image">
+      </div>
+      <button type="button" onclick="toggleQuote(this)">Angry</button>
+      <p id="angry-quote" style="display: none;">"Letting go of anger is a gift to yourself. Choose peace over turmoil."</p>
+    </div>
+  </div>
+    <div class="content-container active revealable">
+      <div class="section revealable">
+        <h2>Mental Health Overview and Stigma</h2>
+        <p>Mental health, a cornerstone of overall well-being, is often shrouded in societal stigma. This stigma, rooted in misconceptions and fear, poses significant barriers to seeking help and fostering open conversations. Overcoming this challenge requires collective efforts to educate, raise awareness, and debunk myths surrounding mental health. By dismantling stigma, we pave the way for a more compassionate society where individuals feel empowered to discuss their mental health challenges openly, without judgment. Breaking down these walls not only encourages seeking help but also contributes to creating a world where mental health is valued, understood, and prioritized on par with physical health</p>
+        <a href="https://www.betterup.com/blog/mental-health-awareness">
+          <article>
+            <h3>General Information</h3>
+            <p class="p">Important social movement to improve mental health and well-being</p>
+          </article>
+        </a>
+        <a href="https://www.betterhealth.vic.gov.au/health/servicesandsupport/stigma-discrimination-and-mental-illness#:~:text=Summary&text=Stigma%20is%20when%20someone%20sees,getting%20the%20help%20they%20need.">
+          <article>
+            <h3>Stigma</h3>
+            <p class="p">Stigma is when someone sees that they are not capable of coping with mental health problems</p>
+          </article>
+        </a>
+      </div>
+
+      <div class="section revealable" id="resources">
+        <h2>Unraveling Mental Health Dynamics</h2>
+        <p>Mental health plays a crucial role in individuals' lives, influencing both emotional and physical well-being. Understanding the dynamics of mental health is essential, particularly when exploring its connection to suicide rates and the resulting health effects. By unraveling these complexities, we gain insights into the challenges individuals face, fostering awareness and empathy. Addressing mental health with compassion and knowledge is vital for promoting a supportive environment and mitigating the impact of suicide on overall well-being</p>
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7721561/">
+          <article>
+            <h3>Suicide Rates</h3>
+            <p class="p">Suicide rates are increasing as mental health conditions increase</p>
+          </article>
+        </a>
+        <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/our-best-mental-health-tips#:~:text=Talk%20to%20someone%20you%20trust%20for%20support&text=Use%20your%20own%20words.,in%20ways%20you%20find%20helpful.">
+          <article>
+            <h3>Health Effects</h3>
+            <p class="p">Mental health effects are increasing as mental health conditions increase</p>
+          </article>
+        </a>
+      </div>
+
+      <div class="section revealable">
+        <h2>Best Ways To Foster Mental Health</h2>
+        <p>Caring for our mental health is a vital aspect of overall well-being. Simple yet impactful practices can make a significant difference in maintaining mental wellness. Regular exercise, adequate sleep, and mindful activities such as meditation contribute to emotional resilience. Nurturing social connections, seeking professional support when needed, and setting realistic goals foster a balanced mental state. Balancing work and leisure, practicing self-compassion, and embracing positive thinking are essential components of a holistic approach to mental health. By incorporating these tips into our daily lives, we empower ourselves to navigate life's challenges with resilience and cultivate lasting mental well-being</p>
+        <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/our-best-mental-health-tips#:~:text=Talk%20to%20someone%20you%20trust%20for%20support&text=Use%20your%20own%20words.,in%20ways%20you%20find%20helpful.">
+          <article>
+            <h3>Best Mental Health Tips</h3>
+            <p class="p">These are some tips when having a hard time</p>
+          </article>
+        </a>
+        <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">
+          <article>
+            <h3>Ways To Care For Your Mental Health</h3>
+            <p class="p">Some things you can do to help your mental state</p>
+          </article>
+        </a>
+      </div>
+    </div>
+
+    <div class="petition" id="petition">
+
+        <h2 style="text-align: left;">Sign Our Petition 📢</h2>
+        <div class="petition-container active">
+        
+          
+          <div class="petition-para revealable">
+            <p>In a world that often remains silent about mental health challenges, we believe in the power of change. It's time to shatter the stigma that surrounds mental health and create an environment where every voice is heard and valued. By adding your signature to this important petition, you're becoming a part of a community dedicated to making a difference. We aim to foster open conversations, understanding, and support for those facing mental health issues. Together, we can ensure that seeking help is seen as a sign of strength, not weakness. Let's stand together and reshape the narrative around mental health. Sign the petition today and be a catalyst for a more compassionate and inclusive world.</p>
+          </div>
+
+          <div class="signatures revealable">
+            <p>🖊️ Michael from New York supports this.</p>
+            <p>🖊️ Ashley from Chicago supports this.</p>
+            <p>🖊️ David from Houston supports this.</p>
+            <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+          </div>
+
+        </div>
+
+   
+      <form id="sign-petition" title="sign-petition">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="hometown">Hometown:</label>
+        <input type="text" id="hometown" name="hometown" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        
+      </form>
+
+       
+      <button id="sign-now-button">Sign Now</button>
+
+    </div>
+   
+    <div id="thanks-modal" class="modal">
+
+      
+      <div class="modal-content">
+        <div id="modal-text-container">
+          <p id="thanks-modal-content"> Thank you for signing the petition! </p>
+          <button id="close-modal-button" class="close-button">Close</button>
+        </div>
+        <img id ="modal-text-container" src="image.jpeg" alt="Celebration Image">
+      </div>
+    </div>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+      <div class="footer">
+        <a href="mailto:bennett1jebril@gmail.com?subject=subject text">Contact</a>
+      </div>    
+    </div>
+  <<script src="index.js"></script> 
+</body>
+
+</html>
